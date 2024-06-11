@@ -2,7 +2,6 @@ import pandas as pd
 import datetime as dt
 from datetime import date
 from datetime import datetime, timedelta
-import schedule
 import time
 import matplotlib.pyplot as plt 
 import numpy as np
