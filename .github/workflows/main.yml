@@ -20,15 +20,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas matplotlib numpy lxml
-
+        pip install pandas matplotlib numpy siphon lxml
+        
     - name: Run script
-      run: python fiveday_forecast.py
+      run: python hrrr_meteogram.py
 
     - name: Commit and push changes
       run: |
         git config --local user.email "tonyillenden@gmail.com"
         git config --local user.name "anthony-illenden"
-        git add plots/five_day_forecast.png
-        git commit -m "Update Five Day Forecast Plot"
+        git add plots/hrrr_meteogram.png
+        git commit -m "Update Meteogram Plot"
         git push
